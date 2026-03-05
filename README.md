@@ -22,7 +22,8 @@ cd your-repo-name
 
 Install dependencies:
 Bash
-uv install langchain-google-genai python-dotenv langchain
+uv init ( to initialiaze the project)
+uv add langchain-google-genai python-dotenv langchain
 
 Set up environment variables:
 Create a .env file in the root directory and add your API key:
