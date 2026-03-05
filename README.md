@@ -17,7 +17,7 @@ Google Gemini API Key
 
 Installation
 Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/RandyBlessingOseiNartey/multi_social_media_post_generator.git
 cd your-repo-name
 
 Install dependencies:
