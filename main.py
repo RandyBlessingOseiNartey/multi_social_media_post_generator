@@ -9,8 +9,8 @@ from langchain_core.runnables import RunnableLambda, RunnableParallel
 
 load_dotenv()
 
-#INTIAL STEP BEFORE THE ACTUAL PARALLEL PIPELINE
-inputs=input("what is your movie: ")
+# INITIAL STEP BEFORE THE ACTUAL PARALLEL PIPELINE
+inputs=input("what is your content about: ")
  #model initialisation
 model= ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=1.0)
 
@@ -67,7 +67,7 @@ instagramPostRunnable=RunnableLambda(instagramPost)
 
 
 final_post=(
-    movieSummaryRunnable | dict_maker_runnable | RunnableParallel(branches={"LinkedIn Post: " : linkedInPostRunnable, "Instagram Post: " : instagramPostRunnable })
+    contentSummaryRunnable | dict_maker_runnable | RunnableParallel(branches={"LinkedIn Post: " : linkedInPostRunnable, "Instagram Post: " : instagramPostRunnable })
     
 )
 
