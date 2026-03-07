@@ -34,7 +34,7 @@ GOOGLE_API_KEY=your_actual_api_key_here
 How It Works
 The project utilizes the LangChain Expression Language (LCEL). The flow is as follows:
 
-Input: Takes a movie title from the user.
+Input: Takes a text/content title from the user.
 
 Summary: A RunnableLambda generates a summary.
 
@@ -47,7 +47,7 @@ Instagram Chain: Formats content for a visual/social audience.
 Output: Both posts are printed to the console.
 
 Usage
-Run the script and enter a movie name when prompted:
+Run the script and enter a text/cotent when prompted:
 
 Bash
 python main.py
